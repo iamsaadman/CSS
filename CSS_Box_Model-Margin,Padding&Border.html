@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+
+    <!-- Box model is consisting of 3 things:
+    1. Content in the core middle.
+    2. Padding outside the content.
+    3. Border sourround both content and padding. 
+    4. Margin is the full body frame of whole content padding and border. -->
+    <style>
+        * { 
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+        .box1{
+           text-align: center;
+           color: yellow;
+           padding: 10px;
+           margin: 25px; 
+           border: 2px solid blue;
+           height: 200px;
+           box-sizing: border-box;  
+           /* if we use it the height of the box will-change:
+           will include both content border and margin as total height.  */
+        }
+        .box2{
+          text-align: center;
+          color: red;
+          padding: 10px;
+          margin: 25px; 
+          border: 2px solid black;
+          height: 200px;
+          box-sizing: border-box;  
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box box1">
+        <h1>I am a box</h1>
+    </div>
+    <div class="box box2">
+        <h1>I am another box.</h1>
+    </div>
+</body>
+
+</html>

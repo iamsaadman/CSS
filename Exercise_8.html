@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounce Animation</title>
+    <style>
+      /* body {
+        display: flex;
+        justify-content: center;
+      } */
+      .box {
+        background-color: blue;
+        width: 80vw;
+        height: 50vh;
+        position: relative;
+        overflow: hidden;
+      }
+      .ball1 {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: bounce 2s ease-in-out infinite;
+      }
+      @keyframes bounce {
+        0% {
+                transform: translate(0, 0); 
+            }
+            25% {
+                transform: translate(20vw, -120px); 
+            }
+            50% {
+                transform: translate(40vw, 0); 
+            }
+            75% {
+                transform: translate(20vw, -120px); 
+            }
+            100% {
+                transform: translate(0, 0); 
+            }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="circle ball1"></div>
+    </div>
+  </body>
+</html>

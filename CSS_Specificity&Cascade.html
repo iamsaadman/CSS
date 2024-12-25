@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* ----Priority of selectors---- */
+        /* Inline Style > ID Selector > Class/Attribute Selector 
+        > Element Selector > Universal Selector */
+
+        /* 1. Example this specificity is 1 */
+        h1 {
+            color: aqua;
+        }
+
+
+        /* 2. Example this specificity is 10 */
+        .yellow {
+            color: yellow;
+        }
+
+        /* Among same selectors the selector which is at the 
+        last amoung them it will take affect */
+
+        /* 3. Example this specificity is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* 4. Example this specificity is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* Another example */
+
+        /* Now Specificity is new 1+10 == 11 */
+        /* So, this priority will be more now than any other */
+        h1.yellow {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>

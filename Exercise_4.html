@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        :root {
+            --primarycolor: rgb(8, 75, 129);
+            --secondarycolor: rgb(41, 154, 206);
+            --textcolor: white;
+            --defpad: 23px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--secondarycolor);
+        }
+
+        nav {
+            background-color: var(--primarycolor);
+            padding: 12px 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: var(--defpad);
+            font-family: "Baloo Bhai 2", sans-serif;
+            color: var(--textcolor);
+            font-weight: bold;
+        }
+
+        ul li a {
+            color: var(--textcolor);
+            text-decoration: none;
+        }
+        h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        color: var(--textcolor);
+        transform: translateX(10px)
+        }
+        p{
+            font-family: "Baloo Bhai 2",sans-serif;
+            font-weight: lighter;
+            color: var(--textcolor);
+            text-align: left;
+            transform: translateX(8px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact us</a></li>
+                <li><a href="/">Services</a></li>
+            </ul>
+        </nav>
+        <div>
+            <br>
+            <h1>About this website</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi sunt quasi harum iure incidunt quod
+                commodi perspiciatis! Voluptas itaque dicta, rem veritatis et laborum, quo error placeat accusantium
+                quia saepe?</p>
+        </div>
+    </header>
+</body>
+
+</html>
